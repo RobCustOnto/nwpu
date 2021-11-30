@@ -1,0 +1,1551 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/zhc86/ontologies/architectureTemplate#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/zhc86/ontologies/architectureTemplate#">
+    <Prefix name="" IRI="http://www.semanticweb.org/zhc86/ontologies/architectureTemplate#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="AGV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Architecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Camera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CartesianCoordinateRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CartesianCoordinateRobotControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CollisionDetectionModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CommonFunctionalRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CommonModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConctactSignalProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ControlModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Cutting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CuttingModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Displacement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Engraving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EngravingModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Fixture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FixtureModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FunctionalRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Gantry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GantryControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HMIModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ImageProcessing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LaserGuidedAGV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Module"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Motor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MovementModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NonFunctionalRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PositionDetectionModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PowerSupply"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PowerSupplyModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProgramModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Requirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Robot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RobotControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RobotPanel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SCARA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SCARAControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Safety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SafetyModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SixAxisRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SixAxisRobotControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SpecificFunctionalRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SpecificModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SystemNonPhysicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SystemPhysicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SystemProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Vision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="VisionModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Welding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WeldingMachine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WeldingModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WeldingSeamTracking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WeldingTorch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WireGuidedAGV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WorkpieceNonPhysicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WorkpiecePhysicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WorkpieceProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="archCompCompose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="archCompComposedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="archModCompose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="archModComposedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="compose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="composedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="cuttingIsRealizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="engravingIsRealizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="fixtureIsRealizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRealizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="linkedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="modCompCompose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="modCompComposedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="weldingIsRealizedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="AbsorbedPower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DisplacementSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Height"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Input"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="InputImpedance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Length"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MaxAbsorbedPower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MaxInputImpedance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MaxMovementSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MaxOutputCurrent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MaxOutputImpedance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MaxOutputPower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MaxOutputVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MaxSupplyVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MinAbsorbedPower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MinInputImpedance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MinMovementSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MinOutputCurrent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MinOutputImpedance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MinOutputPower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MinOutputVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MinSupplyVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Output"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="OutputCurrent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="OutputImpedance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="OutputPower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="OutputVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Payload"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="PhysicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ProgramMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredDisplacementMaxSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredDisplacementMinSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredDisplacementSpeed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredMaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredSystemHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredSystemLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredSystemMaxHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredSystemMinHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredSystemWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="RequiredSystemWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="SupplyVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Weight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Width"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkingRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkingRangeHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkingRangeLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkingRangeRadius"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkingRangeWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceMaxHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceMaxLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceMaxWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceMaxWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceMinHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceMinLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceMinWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceMinWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="WorkpieceWidth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Baumer_XC100_camera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Beckhoff_CP6942_gantry_controller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Bosch_MSK061_servo_motor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Cognex_CIC2000_camera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DIGI-LAS_seam_tracker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="HMI_module"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Intelligentlaser_ILUNI_seam_tracker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="KUKA_KR162C_robot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="KUKA_KRC4_robot_controller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="KempArc_SYN500_welding_machine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Panasonic_YD500_welding_machine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="TBi_RM82_welding_torch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Yaskawa_AR1730_robot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Yaskawa_YRC1000_robot_controller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="collision_detection_module"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="control_module"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="four_robot_gantry_welding_system"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="movement_module_series_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="movement_module_series_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="panel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="physicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="two_robot_double_side_welding_system"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="two_robot_single_side_welding_system"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="vision_module_series_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="vision_module_series_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="welding_module_series_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="welding_module_series_2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="AGV"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Camera"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CartesianCoordinateRobot"/>
+        <Class IRI="Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CartesianCoordinateRobotControl"/>
+        <Class IRI="RobotControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CollisionDetectionModule"/>
+        <Class IRI="CommonModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommonFunctionalRequirement"/>
+        <Class IRI="FunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommonModule"/>
+        <Class IRI="Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConctactSignalProcessing"/>
+        <Class IRI="WeldingSeamTracking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Control"/>
+        <Class IRI="CommonFunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ControlModule"/>
+        <Class IRI="CommonModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Cutting"/>
+        <Class IRI="SpecificFunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CuttingModule"/>
+        <Class IRI="SpecificModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Displacement"/>
+        <Class IRI="CommonFunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Engraving"/>
+        <Class IRI="SpecificFunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EngravingModule"/>
+        <Class IRI="SpecificModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Fixture"/>
+        <Class IRI="SpecificFunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FixtureModule"/>
+        <Class IRI="SpecificModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FunctionalRequirement"/>
+        <Class IRI="Requirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Gantry"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GantryControl"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HMIModule"/>
+        <Class IRI="CommonModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ImageProcessing"/>
+        <Class IRI="WeldingSeamTracking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LaserGuidedAGV"/>
+        <Class IRI="AGV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Motor"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MovementModule"/>
+        <Class IRI="CommonModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NonFunctionalRequirement"/>
+        <Class IRI="Requirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PositionDetectionModule"/>
+        <Class IRI="CommonModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PowerSupply"/>
+        <Class IRI="CommonFunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PowerSupplyModule"/>
+        <Class IRI="CommonModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProgramModule"/>
+        <Class IRI="CommonModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Robot"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RobotControl"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RobotPanel"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SCARA"/>
+        <Class IRI="Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SCARAControl"/>
+        <Class IRI="RobotControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Safety"/>
+        <Class IRI="CommonFunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SafetyModule"/>
+        <Class IRI="CommonModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SixAxisRobot"/>
+        <Class IRI="Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SixAxisRobotControl"/>
+        <Class IRI="RobotControl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SpecificFunctionalRequirement"/>
+        <Class IRI="FunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SpecificModule"/>
+        <Class IRI="Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemNonPhysicalProperty"/>
+        <Class IRI="SystemProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemPhysicalProperty"/>
+        <Class IRI="SystemProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SystemProperty"/>
+        <Class IRI="NonFunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Vision"/>
+        <Class IRI="CommonFunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="VisionModule"/>
+        <Class IRI="CommonModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Welding"/>
+        <Class IRI="SpecificFunctionalRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WeldingMachine"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WeldingModule"/>
+        <Class IRI="SpecificModule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WeldingSeamTracking"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WeldingTorch"/>
+        <Class IRI="Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WireGuidedAGV"/>
+        <Class IRI="AGV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WorkpieceNonPhysicalProperty"/>
+        <Class IRI="WorkpieceProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WorkpiecePhysicalProperty"/>
+        <Class IRI="WorkpieceProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WorkpieceProperty"/>
+        <Class IRI="NonFunctionalRequirement"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="Camera"/>
+        <NamedIndividual IRI="Baumer_XC100_camera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="GantryControl"/>
+        <NamedIndividual IRI="Beckhoff_CP6942_gantry_controller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Motor"/>
+        <NamedIndividual IRI="Bosch_MSK061_servo_motor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Camera"/>
+        <NamedIndividual IRI="Cognex_CIC2000_camera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WeldingSeamTracking"/>
+        <NamedIndividual IRI="DIGI-LAS_seam_tracker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="HMIModule"/>
+        <NamedIndividual IRI="HMI_module"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WeldingSeamTracking"/>
+        <NamedIndividual IRI="Intelligentlaser_ILUNI_seam_tracker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Robot"/>
+        <NamedIndividual IRI="KUKA_KR162C_robot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="RobotControl"/>
+        <NamedIndividual IRI="KUKA_KRC4_robot_controller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WeldingMachine"/>
+        <NamedIndividual IRI="KempArc_SYN500_welding_machine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WeldingMachine"/>
+        <NamedIndividual IRI="Panasonic_YD500_welding_machine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WeldingTorch"/>
+        <NamedIndividual IRI="TBi_RM82_welding_torch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Robot"/>
+        <NamedIndividual IRI="Yaskawa_AR1730_robot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="RobotControl"/>
+        <NamedIndividual IRI="Yaskawa_YRC1000_robot_controller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="CollisionDetectionModule"/>
+        <NamedIndividual IRI="collision_detection_module"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ControlModule"/>
+        <NamedIndividual IRI="control_module"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Architecture"/>
+        <NamedIndividual IRI="four_robot_gantry_welding_system"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="MovementModule"/>
+        <NamedIndividual IRI="movement_module_series_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="MovementModule"/>
+        <NamedIndividual IRI="movement_module_series_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="RobotPanel"/>
+        <NamedIndividual IRI="panel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Architecture"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Architecture"/>
+        <NamedIndividual IRI="two_robot_double_side_welding_system"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Architecture"/>
+        <NamedIndividual IRI="two_robot_single_side_welding_system"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="VisionModule"/>
+        <NamedIndividual IRI="vision_module_series_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="VisionModule"/>
+        <NamedIndividual IRI="vision_module_series_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WeldingModule"/>
+        <NamedIndividual IRI="welding_module_series_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WeldingModule"/>
+        <NamedIndividual IRI="welding_module_series_2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="modCompComposedBy"/>
+        <NamedIndividual IRI="Cognex_CIC2000_camera"/>
+        <NamedIndividual IRI="vision_module_series_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="modCompComposedBy"/>
+        <NamedIndividual IRI="KUKA_KR162C_robot"/>
+        <NamedIndividual IRI="movement_module_series_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="modCompComposedBy"/>
+        <NamedIndividual IRI="control_module"/>
+        <NamedIndividual IRI="control_module"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModCompose"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <NamedIndividual IRI="collision_detection_module"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModCompose"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <NamedIndividual IRI="control_module"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModCompose"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <NamedIndividual IRI="movement_module_series_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModCompose"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <NamedIndividual IRI="vision_module_series_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModCompose"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <NamedIndividual IRI="welding_module_series_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <NamedIndividual IRI="welding_module_series_1"/>
+        <NamedIndividual IRI="four_robot_gantry_welding_system"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <NamedIndividual IRI="welding_module_series_1"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <NamedIndividual IRI="welding_module_series_1"/>
+        <NamedIndividual IRI="two_robot_double_side_welding_system"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <NamedIndividual IRI="welding_module_series_1"/>
+        <NamedIndividual IRI="two_robot_single_side_welding_system"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <NamedIndividual IRI="welding_module_series_2"/>
+        <NamedIndividual IRI="four_robot_gantry_welding_system"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <NamedIndividual IRI="welding_module_series_2"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <NamedIndividual IRI="welding_module_series_2"/>
+        <NamedIndividual IRI="two_robot_double_side_welding_system"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <NamedIndividual IRI="welding_module_series_2"/>
+        <NamedIndividual IRI="two_robot_single_side_welding_system"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Cost"/>
+        <NamedIndividual IRI="KUKA_KR162C_robot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">200000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="MaxAbsorbedPower"/>
+        <NamedIndividual IRI="KUKA_KR162C_robot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">7.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Payload"/>
+        <NamedIndividual IRI="KUKA_KR162C_robot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">16.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Weight"/>
+        <NamedIndividual IRI="KUKA_KR162C_robot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">245.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="WorkingRangeRadius"/>
+        <NamedIndividual IRI="KUKA_KR162C_robot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1612.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Cost"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">950000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Height"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Length"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="MaxMovementSpeed"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">600.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="MinMovementSpeed"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Width"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="WorkingRangeHeight"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="WorkingRangeLength"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="WorkingRangeWidth"/>
+        <NamedIndividual IRI="single_robot_gantry_welding_system"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">4.0</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="archCompCompose"/>
+        <ObjectProperty IRI="compose"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="archCompComposedBy"/>
+        <ObjectProperty IRI="composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="archModCompose"/>
+        <ObjectProperty IRI="compose"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <ObjectProperty IRI="composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="compose"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="composedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="cuttingIsRealizedBy"/>
+        <ObjectProperty IRI="isRealizedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="engravingIsRealizedBy"/>
+        <ObjectProperty IRI="isRealizedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="fixtureIsRealizedBy"/>
+        <ObjectProperty IRI="isRealizedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isRealizedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="linkedTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="modCompCompose"/>
+        <ObjectProperty IRI="compose"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="modCompComposedBy"/>
+        <ObjectProperty IRI="composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="weldingIsRealizedBy"/>
+        <ObjectProperty IRI="isRealizedBy"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="archCompCompose"/>
+        <ObjectProperty IRI="archCompComposedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="archModCompose"/>
+        <ObjectProperty IRI="archModComposedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="modCompCompose"/>
+        <ObjectProperty IRI="modCompComposedBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="archCompComposedBy"/>
+        <Class IRI="Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <Class IRI="Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="cuttingIsRealizedBy"/>
+        <Class IRI="Cutting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="engravingIsRealizedBy"/>
+        <Class IRI="Engraving"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="fixtureIsRealizedBy"/>
+        <Class IRI="Fixture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="linkedTo"/>
+        <Class IRI="Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="modCompComposedBy"/>
+        <Class IRI="Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="weldingIsRealizedBy"/>
+        <Class IRI="Welding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="archCompComposedBy"/>
+        <Class IRI="Architecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="archModComposedBy"/>
+        <Class IRI="Architecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="cuttingIsRealizedBy"/>
+        <Class IRI="CuttingModule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="engravingIsRealizedBy"/>
+        <Class IRI="EngravingModule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="fixtureIsRealizedBy"/>
+        <Class IRI="FixtureModule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="linkedTo"/>
+        <Class IRI="Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="modCompComposedBy"/>
+        <Class IRI="Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="weldingIsRealizedBy"/>
+        <Class IRI="WeldingModule"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="AbsorbedPower"/>
+        <DataProperty IRI="Input"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="Cost"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="DisplacementSpeed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="Height"/>
+        <DataProperty IRI="PhysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="Input"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="InputImpedance"/>
+        <DataProperty IRI="Input"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="Length"/>
+        <DataProperty IRI="PhysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MaxAbsorbedPower"/>
+        <DataProperty IRI="AbsorbedPower"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MaxInputImpedance"/>
+        <DataProperty IRI="InputImpedance"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MaxMovementSpeed"/>
+        <DataProperty IRI="DisplacementSpeed"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MaxOutputCurrent"/>
+        <DataProperty IRI="OutputCurrent"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MaxOutputImpedance"/>
+        <DataProperty IRI="OutputImpedance"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MaxOutputPower"/>
+        <DataProperty IRI="OutputPower"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MaxOutputVoltage"/>
+        <DataProperty IRI="OutputVoltage"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MaxSupplyVoltage"/>
+        <DataProperty IRI="SupplyVoltage"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MinAbsorbedPower"/>
+        <DataProperty IRI="AbsorbedPower"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MinInputImpedance"/>
+        <DataProperty IRI="InputImpedance"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MinMovementSpeed"/>
+        <DataProperty IRI="DisplacementSpeed"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MinOutputCurrent"/>
+        <DataProperty IRI="OutputCurrent"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MinOutputImpedance"/>
+        <DataProperty IRI="OutputImpedance"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MinOutputPower"/>
+        <DataProperty IRI="OutputPower"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MinOutputVoltage"/>
+        <DataProperty IRI="OutputVoltage"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="MinSupplyVoltage"/>
+        <DataProperty IRI="SupplyVoltage"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="Output"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="OutputCurrent"/>
+        <DataProperty IRI="Output"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="OutputImpedance"/>
+        <DataProperty IRI="Output"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="OutputPower"/>
+        <DataProperty IRI="Output"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="OutputVoltage"/>
+        <DataProperty IRI="Output"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="Payload"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="PhysicalProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ProgramMode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredDisplacementMaxSpeed"/>
+        <DataProperty IRI="RequiredDisplacementSpeed"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredDisplacementMinSpeed"/>
+        <DataProperty IRI="RequiredDisplacementSpeed"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredDisplacementSpeed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredMaterial"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredPrice"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredSystemHeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredSystemLength"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredSystemMaxHeight"/>
+        <DataProperty IRI="RequiredSystemHeight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredSystemMinHeight"/>
+        <DataProperty IRI="RequiredSystemHeight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredSystemWeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="RequiredSystemWidth"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="SupplyVoltage"/>
+        <DataProperty IRI="Input"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="Weight"/>
+        <DataProperty IRI="PhysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="Width"/>
+        <DataProperty IRI="PhysicalProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkingRange"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkingRangeHeight"/>
+        <DataProperty IRI="WorkingRange"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkingRangeLength"/>
+        <DataProperty IRI="WorkingRange"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkingRangeRadius"/>
+        <DataProperty IRI="WorkingRange"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkingRangeWidth"/>
+        <DataProperty IRI="WorkingRange"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceHeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceLength"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceMaxHeight"/>
+        <DataProperty IRI="WorkpieceHeight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceMaxLength"/>
+        <DataProperty IRI="WorkpieceLength"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceMaxWeight"/>
+        <DataProperty IRI="WorkpieceWeight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceMaxWidth"/>
+        <DataProperty IRI="WorkpieceWidth"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceMinHeight"/>
+        <DataProperty IRI="WorkpieceHeight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceMinLength"/>
+        <DataProperty IRI="WorkpieceLength"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceMinWeight"/>
+        <DataProperty IRI="WorkpieceWeight"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceMinWidth"/>
+        <DataProperty IRI="WorkpieceWidth"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceWeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="WorkpieceWidth"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="AbsorbedPower"/>
+        <Class IRI="AGV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="AbsorbedPower"/>
+        <Class IRI="Gantry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="AbsorbedPower"/>
+        <Class IRI="Robot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="AbsorbedPower"/>
+        <Class IRI="RobotControl"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="AbsorbedPower"/>
+        <Class IRI="WeldingMachine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="AbsorbedPower"/>
+        <Class IRI="WeldingSeamTracking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="AbsorbedPower"/>
+        <Class IRI="WeldingTorch"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Cost"/>
+        <Class IRI="Component"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DisplacementSpeed"/>
+        <Class IRI="AGV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DisplacementSpeed"/>
+        <Class IRI="Gantry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DisplacementSpeed"/>
+        <Class IRI="Robot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InputImpedance"/>
+        <Class IRI="AGV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InputImpedance"/>
+        <Class IRI="Gantry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InputImpedance"/>
+        <Class IRI="Robot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InputImpedance"/>
+        <Class IRI="RobotControl"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InputImpedance"/>
+        <Class IRI="WeldingMachine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InputImpedance"/>
+        <Class IRI="WeldingSeamTracking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="InputImpedance"/>
+        <Class IRI="WeldingTorch"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="OutputCurrent"/>
+        <Class IRI="PowerSupplyModule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="OutputImpedance"/>
+        <Class IRI="PowerSupplyModule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="OutputPower"/>
+        <Class IRI="PowerSupplyModule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="OutputVoltage"/>
+        <Class IRI="PowerSupplyModule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Payload"/>
+        <Class IRI="AGV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Payload"/>
+        <Class IRI="Gantry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Payload"/>
+        <Class IRI="Robot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="PhysicalProperty"/>
+        <Class IRI="Component"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="PhysicalProperty"/>
+        <Class IRI="Module"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="ProgramMode"/>
+        <Class IRI="ProgramModule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="SupplyVoltage"/>
+        <Class IRI="AGV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="SupplyVoltage"/>
+        <Class IRI="Gantry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="SupplyVoltage"/>
+        <Class IRI="Robot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="SupplyVoltage"/>
+        <Class IRI="RobotControl"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="SupplyVoltage"/>
+        <Class IRI="WeldingMachine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="SupplyVoltage"/>
+        <Class IRI="WeldingSeamTracking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="SupplyVoltage"/>
+        <Class IRI="WeldingTorch"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Weight"/>
+        <Class IRI="AGV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Weight"/>
+        <Class IRI="Gantry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Weight"/>
+        <Class IRI="Robot"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Weight"/>
+        <Class IRI="WeldingMachine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Weight"/>
+        <Class IRI="WeldingSeamTracking"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Weight"/>
+        <Class IRI="WeldingTorch"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="WorkingRange"/>
+        <Class IRI="MovementModule"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="Cost"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DisplacementSpeed"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Payload"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="ProgramMode"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
